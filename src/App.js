@@ -4,19 +4,21 @@ import "./App.css";
 
 import ProfileImg from "./assets/instagram-4.jpeg";
 import ShareBtn from "./assets/share-btn.svg";
+import Dots from "./assets/dots.svg";
+import Slack from "./assets/slack.png";
+import GitHub from "./assets/github.png";
+import Zuri from "./assets/zuri.png";
+import Ingressive from "./assets/ingressive.png";
 
 const LinkTemplate = ({ data }) => {
   const { linkValue, id, externalLink } = data;
   return (
-    <a
-      href={externalLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      id={id}
-      className="link"
-    >
-      {linkValue}
-    </a>
+    <div className="link">
+      <a href={externalLink} target="_blank" rel="noopener noreferrer" id={id}>
+        {linkValue}
+      </a>
+      <img src={ShareBtn} alt="share-btn" />
+    </div>
   );
 };
 
@@ -56,10 +58,9 @@ const App = () => {
 
   return (
     <div className="app">
-      
       {/* share button */}
       <div className="app-share">
-        <img src={ShareBtn} alt="share-btn" />
+        <img src={Dots} alt="share-btn" />
       </div>
 
       {/* profile container */}
@@ -80,6 +81,28 @@ const App = () => {
       {Object.keys(Links).map((_idx) => (
         <LinkTemplate data={Links[_idx]} />
       ))}
+
+      {/* socials link  */}
+      <div className="app-socials">
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <img src={Slack} alt="slack" />
+        </a>
+        <a href="https://github.com/jerncomania28" target="_blank" rel="noopener noreferrer">
+          <img src={GitHub} alt="slack" />
+        </a>
+      </div>
+
+      <div className="app-zuri">
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <img src={Zuri} alt="zuri-internship" />
+        </a>
+
+        <p>HNG Internship 9 Frontend Task</p>
+
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          <img src={Ingressive} alt="ingressive" />
+        </a>
+      </div>
     </div>
   );
 };
