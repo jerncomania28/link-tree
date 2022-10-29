@@ -2,7 +2,7 @@ import "./App.css";
 
 // asset
 
-import ProfileImg from "./assets/instagram-4.jpeg";
+import ProfileImg from "./assets/Jeremiah.jpg";
 import ShareBtn from "./assets/share-btn.svg";
 import Dots from "./assets/dots.svg";
 import Slack from "./assets/slack.png";
