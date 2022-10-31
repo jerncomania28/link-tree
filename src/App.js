@@ -33,7 +33,7 @@ const App = () => {
     },
     1: {
       linkValue: "Zuri Team",
-      id: "btn_zuri",
+      id: "btn__zuri",
       externalLink: "https://training.zuri.team/",
     },
     2: {
@@ -43,7 +43,7 @@ const App = () => {
     },
     3: {
       linkValue: "Python Books",
-      id: "book_python",
+      id: "book__python",
       externalLink: "https://books.zuri.team/python-for-beginners?ref_id=jay",
     },
     4: {
@@ -53,7 +53,7 @@ const App = () => {
     },
     5: {
       linkValue: "Design Books",
-      id: "book_design",
+      id: "book__design",
       externalLink: "https://books.zuri.team/design-rules",
     },
   };
@@ -69,7 +69,7 @@ const App = () => {
       <div className="app-profile">
         {/* profile display image */}
         <div className="app-profile--img">
-          <img src={ProfileImg} alt="profile-avatar" />
+          <img src={ProfileImg} alt="profile-avatar" id="profile__img" />
         </div>
 
         {/* profile links */}
