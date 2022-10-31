@@ -3,7 +3,6 @@ import "./App.css";
 // asset
 
 import ProfileImg from "./assets/Jeremiah.jpg";
-import ShareBtn from "./assets/share-btn.svg";
 import Dots from "./assets/dots.svg";
 import Slack from "./assets/slack.png";
 import GitHub from "./assets/github.png";
@@ -13,12 +12,15 @@ import Ingressive from "./assets/ingressive.png";
 const LinkTemplate = ({ data }) => {
   const { linkValue, id, externalLink } = data;
   return (
-    <div className="link">
-      <a href={externalLink} target="_blank" rel="noopener noreferrer" id={id}>
-        {linkValue}
-      </a>
-      <img src={ShareBtn} alt="share-btn" />
-    </div>
+    <a
+      href={externalLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      id={id}
+      className="link"
+    >
+      {linkValue}
+    </a>
   );
 };
 
@@ -73,7 +75,7 @@ const App = () => {
         {/* profile links */}
         <div className="app-profile--links">
           <p id="twitter">@tech_optician</p>
-          <p id="slack">Jeremiah</p>
+          <p id="slack">Jeremiah Okon</p>
         </div>
       </div>
 
@@ -87,7 +89,11 @@ const App = () => {
         <a href="/" target="_blank" rel="noopener noreferrer">
           <img src={Slack} alt="slack" />
         </a>
-        <a href="https://github.com/jerncomania28" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/jerncomania28"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={GitHub} alt="slack" />
         </a>
       </div>

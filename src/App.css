@@ -73,33 +73,10 @@
   text-align: center;
   border-radius: 8px;
   padding: 24px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.link a {
   text-decoration: none;
   color: #101828;
-  font-size: 15px;
-  margin: auto 40px;
-}
+  font-size: 18px;
 
-.link img {
-  visibility: hidden;
-}
-
-.link:hover img {
-  visibility: visible;
-}
-
-.link:hover {
-  background: black;
-  opacity: 0.6;
-}
-
-.link:hover a {
-  color: white;
 }
 
 .app-socials {
@@ -134,9 +111,5 @@
 @media screen and (min-width: 800px) {
   .app-zuri p {
     display: flex;
-  }
-
-  .link a {
-    font-size: 18px;
   }
 }
