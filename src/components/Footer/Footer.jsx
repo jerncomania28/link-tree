@@ -1,7 +1,7 @@
 
 
-import Zuri from "../assets/zuri.png";
-import Ingressive from "../assets/ingressive.png";
+import Zuri from "../../assets/zuri.png";
+import Ingressive from "../../assets/ingressive.png";
 
 // stylesheet
 import "./Footer.css";
