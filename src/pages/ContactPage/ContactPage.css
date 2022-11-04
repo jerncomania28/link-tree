@@ -8,9 +8,8 @@
 }
 
 .contact-container {
-  border: 1px solid black;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
   padding: 1rem;
   position: relative;
@@ -72,12 +71,13 @@
 
 .contact-form--checkbox {
   align-self: flex-start;
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 
 .contact-form--checkbox span {
-  font-size: 16px;
+  font-size: 14px;
   color: #475467;
+  text-align: center;
 }
 
 .contact-form--comment textarea::placeholder {
@@ -85,6 +85,9 @@
   color: #667085;
   font-weight: 400;
   font-family: sans-serif;
+  text-transform: lowercase;
+  line-height: 30px;
+  text-indent: 5px;
 }
 
 .contact-form-button {
@@ -98,7 +101,32 @@
   outline: none;
   border: none;
   text-transform: capitalize;
+}
 
+.input-field{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.input-field label {
+  color: #344054;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: capitalize;
+
+}
+.input-field input{
+    width: 100%;
+    padding: 15px 0px;
+    outline: none;
+    border-radius: 5px;
+    text-indent: 10px;
+    border: 1px solid black;
+}
+
+.input-field input::placeholder{
+    font-size: 16px;
 }
 
 .error-message {
@@ -117,6 +145,6 @@
     flex-direction: row;
   }
   .contact-form--container__input {
-    width: 45%;
+    width: 48%;
   }
 }

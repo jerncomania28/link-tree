@@ -8,10 +8,10 @@ import "./ContactPage.css";
 
 const InputField = ({ label, type, placeholder, name, className }) => {
     return (
-        <div className={className}>
+        <div className={`input-field ${className}`}>
             <label>{label}</label> <br />
             <input type={type} placeholder={placeholder} name={name} /> <br />
-            <small className="error-message"> Dislays error messages</small>
+            {/* <small className="error-message"> Dislays error messages</small> */}
         </div>
 
     )
@@ -59,7 +59,7 @@ const ContactPage = () => {
                     <div className="contact-form--comment">
                         <label>Message</label>
                         <textarea
-                            placeholder="send me a message and I'll reply you as soon as possible."
+                            placeholder="send me a message and i'll reply you as soon as possible."
                         ></textarea>
                     </div>
 
