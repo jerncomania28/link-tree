@@ -1,0 +1,17 @@
+.app-zuri {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.app-zuri img {
+  width: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .app-zuri {
+    flex-direction: row;
+  }
+}

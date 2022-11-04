@@ -76,7 +76,6 @@
   text-decoration: none;
   color: #101828;
   font-size: 18px;
-
 }
 
 .app-socials {
@@ -90,26 +89,4 @@
 .app-socials img {
   width: 40px;
   margin: auto 20px;
-}
-
-.app-zuri {
-  width: 80%;
-  margin: 30px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.app-zuri img {
-  width: 100px;
-}
-
-.app-zuri p {
-  display: none;
-}
-
-@media screen and (min-width: 800px) {
-  .app-zuri p {
-    display: flex;
-  }
 }

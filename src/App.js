@@ -6,8 +6,9 @@ import ProfileImg from "./assets/Jeremiah.jpg";
 import Dots from "./assets/dots.svg";
 import Slack from "./assets/slack.png";
 import GitHub from "./assets/github.png";
-import Zuri from "./assets/zuri.png";
-import Ingressive from "./assets/ingressive.png";
+
+// components
+import Footer from "./components/Footer";
 
 const LinkTemplate = ({ data }) => {
   const { linkValue, id, externalLink } = data;
@@ -81,7 +82,7 @@ const App = () => {
 
       {/* links */}
       {Object.keys(Links).map((_idx) => (
-        <LinkTemplate data={Links[_idx]} />
+        <LinkTemplate data={Links[_idx]} key={_idx} />
       ))}
 
       {/* socials link  */}
@@ -98,17 +99,7 @@ const App = () => {
         </a>
       </div>
 
-      <div className="app-zuri">
-        <a href="/" target="_blank" rel="noopener noreferrer">
-          <img src={Zuri} alt="zuri-internship" />
-        </a>
-
-        <p>HNG Internship 9 Frontend Task</p>
-
-        <a href="/" target="_blank" rel="noopener noreferrer">
-          <img src={Ingressive} alt="ingressive" />
-        </a>
-      </div>
+      <Footer />
     </div>
   );
 };
